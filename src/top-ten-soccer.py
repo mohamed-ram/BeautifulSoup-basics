@@ -68,7 +68,7 @@ if page.status_code == 200:
     table.index = table.index + 1
     
     # export to csv file.
-    table.to_csv("top-ten-soccer.csv", sep=",", index=False, encoding="utf-8")
+    table.to_csv("data/top-ten-soccer.csv", sep=",", index=False, encoding="utf-8")
     print(table)
         
 
