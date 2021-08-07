@@ -3,6 +3,8 @@ Lib/
 Scripts/
 .idea/
 
+src/__pycache__/
+
 *.cfg
 
 
