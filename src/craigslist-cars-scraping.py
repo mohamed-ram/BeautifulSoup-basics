@@ -11,12 +11,12 @@ data = {
     }
 
 # get all listings up to specific page..
-pages_to = 5
+pages_to = 200
 
 def get_data():
     page_number = 1
     while page_number <= pages_to:
-        base_url = f"https://losangeles.craigslist.org/d/for-sale/search/sss?s={page_number}&query=car&sort=rel"
+        base_url = f"https://losangeles.craigslist.org/d/cars-trucks/search/cta?s={page_number}&query=car&sort=rel"
     
         # get response from base url..
         page = requests.get(base_url)
